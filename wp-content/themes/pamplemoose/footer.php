@@ -9,7 +9,7 @@
 							<a href="blog" class="fade">Blog</a><br/><br/>
 							<a href="blog" class="fade">Contact</a>
 							
-							<p id="copyright">Copyright Pamplemoose Creative 2013</p>
+							<p id="copyright" class="hide-for-small">Copyright Pamplemoose Creative 2013</p>
 	
 						</div>
 						
@@ -18,7 +18,7 @@
 							<a href=""><img src="<?php bloginfo('template_url'); ?>/images/home/icon_twitter.png" alt="Pamplemoose Twitter"/ class="fade"></a>
 							<a href=""><img src="<?php bloginfo('template_url'); ?>/images/home/icon_facebook.png" alt="Pamplemoose Facebook"/ class="fade"></a>
 							<a href=""><img src="<?php bloginfo('template_url'); ?>/images/home/icon_pinterest.png" alt="Pamplemoose Pinterest"/ class="fade"></a>							
-							<a id="newsletter" class="round button right">Get spammed. Monthly.</a>
+							<a id="newsletter" class="round button right hide-for-small">Get spammed. Monthly.</a>
 						
 						</div>
 	

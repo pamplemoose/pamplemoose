@@ -4,32 +4,34 @@
 
 		<div class="container home">
 					
-			<a id="logo" href="<?php echo site_url(); ?>"></a>
+			<a id="logo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
+			
+			<div id="menuMobile" class="show-for-small">
+			
+				
+				
+			</div>
 					
-			<div id="menuContainer">
+			<div id="menuContainer" class="hide-for-small">
 
 			<div id="menu" class="default">
 			
-			<div id="homeHeader" >
+			<div id="homeHeader" class="hide-for-small">
 			
 				<div class="row">
 			
-			
-					<a id="logoScroll" href="<?php echo site_url(); ?>"></a>
-
+				<a id="logoScroll" href="<?php echo site_url(); ?>"></a>
 			
 					<div class="twelve columns centered" id="nav">
 
 						<header role="banner" id="top-header">
-							
-							
 							
 								<div class="row">
 							
 									<div class="one column">
 									
 										<div id="homeIcon1">
-											<li><a href="#why"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home1.png" /><span>Why</span></a></li>
+											<li><a href="#whyAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home1.png" /><span>Why</span></a></li>
 										</div>
 										
 									</div>
@@ -37,7 +39,7 @@
 									<div class="two columns">
 									
 										<div id="homeIcon2">
-											<li><a href="#moostitution"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home2.png" /><span>Formula</span></a></li>
+											<li><a href="#formulaAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home2.png" /><span>Formula</span></a></li>
 										</div>
 										
 									</div>
@@ -45,7 +47,7 @@
 									<div class="two columns offset-by-six">
 									
 										<div id="homeIcon3">
-											<li><a href="#victims"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home3.png" /><span>Victims</span></a></li>
+											<li><a href="#victimsAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home3.png" /><span>Victims</span></a></li>
 										</div>
 										
 									</div>
@@ -53,7 +55,7 @@
 									<div class="one column">
 									
 										<div id="homeIcon4">
-											<li><a href="#huntUsDown"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home4.png" /><span>Hunt us down</span></a></li>
+											<li><a href="#huntAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home4.png" /><span>Hunt us down</span></a></li>
 										</div>
 										
 									</div>
@@ -72,9 +74,14 @@
 				
 			</div>
 			
-
-			
-			<div class="container">
+			<div class="show-for-small row" id="sliderMobile">
+				<div class="twelve columns">
+					<h2>We create exceptional brands</h2>
+					<p class="mainTitle">removing barriers in the way of brand creativity.</p>
+				</div>
+			</div>
+				
+			<div class="container hide-for-small">
 			
 				<div id="featuredContent">
 				
@@ -86,7 +93,7 @@
 						  
 							<h2>We create exceptional brands</h2>
 							<p class="mainTitle">removing barriers in the way of brand creativity.</p>
-							<p class="subTitle">We hunt for unique visions and tell captivating stories, avoiding the mundane.</p>
+							
 							<a class="round button center" href="">Study our victims</a>
 						  
 							</div>
@@ -129,6 +136,8 @@
 					</div>
 					
 				</div>
+
+			
 				
 		  
 				<script type='text/javascript'>
@@ -136,7 +145,9 @@
 				       $('#featuredContent').orbit({ fluid: '16x6', timer: false });
 				   });
 				</script>
-			</div>		
+			</div>
+			
+			<div id="whyAnchor"></div>		
 			
 
 			<div class="row" id="why">
@@ -165,21 +176,23 @@
 			
 			</div>
 			
+	
 			<div class="row" >
 
 				<div class="six columns">
 				
-					<img src="<?php bloginfo('template_url'); ?>/images/home/grapefruit.png" alt="grapefruit" />
-					
 					<p class="loveGrapfruit">We love grapefruit</p>
 				
+					<img src="<?php bloginfo('template_url'); ?>/images/home/grapefruit.png" alt="grapefruit" />
+								
 				</div>
 				
 				<div class="six columns">
 				
+					<p class="canadianTwist">We have a canadian twist</p>
+				
 					<img src="<?php bloginfo('template_url'); ?>/images/home/moose.png" alt="moose" />
 					
-					<p class="canadianTwist">We have a canadian twist</p>
 				
 				</div>
 			
@@ -194,12 +207,16 @@
 				</div>
 			
 			</div>
+
+			<div id="formulaAnchor"></div>		
+
+
 			
-			<div class="container" id="moostitution">
+			<div class="container hide-for-small" id="formula">
 			
 				<div class="row">
 				
-					<div class="twelve columns">
+					<div class="six columns">
 					
 						<div id="banner">
 						
@@ -207,6 +224,9 @@
 						
 						</div>
 						
+					</div>
+					
+					<div class="six columns">	
 			
 						<div id="contents">
 						
@@ -221,14 +241,40 @@
 							
 						</div>
 						
-						
-					
+										
 					</div>
 				
 				</div>
 			
 			</div>
 			
+			<div class="container show-for-small" id="formulaMobile">
+			
+				<div class="row">
+				
+					<div class="twelve columns">
+					
+												
+							<h2>Formula</h2>
+						
+							<ul>
+								<li>We choose projects <br/>we believe in.</li>
+								<li>We start today.</li>
+								<li>We don't take shortcuts.</li>
+								<li>We devise it with you.</li>
+								<li>We deliver what's needed.</li>
+								
+							</ul>
+		
+					</div>
+				
+				</div>
+			
+			</div>
+
+			
+
+			<div id="victimsAnchor"></div>				
 
 			<!-- Victims -->
 			
@@ -260,7 +306,7 @@
 			
 			</div>
 			
-			
+			<div id="huntAnchor"></div>
 			
 			<!-- Hunt us down -->
 			
@@ -317,7 +363,7 @@
 			
 			$('#nav').onePageNav({
 		    currentClass: 'current',
-		    changeHash: false,
+		    changeHash: true,
 		    scrollSpeed: 1000,
 		    scrollOffset: 0,
 		    scrollThreshold: 0.5,

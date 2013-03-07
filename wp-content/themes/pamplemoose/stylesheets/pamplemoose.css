@@ -82,11 +82,11 @@ h3{
 	color:#330000;
 	font-size:24px;
    -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
-  /* ...and now for the proper property */
-  transition:color .2s ease-out, background 2s ease-in;
+   -ms-transition:color .2s ease-out, background 2s ease-in;
+   -moz-transition:color .2s ease-out, background 2s ease-in;
+   -webkit-transition:color .2s ease-out, background 2s ease-in;
+   /* ...and now for the proper property */
+   transition:color .2s ease-out, background 2s ease-in;
 }
 
 #nav a span{
@@ -111,11 +111,10 @@ h3{
 	position:absolute;
 }
 
-#homeIcon1 .current, #homeIcon3 .current, #homeIcon4 .current{
+#homeIcon1 .current, #homeIcon2 .current, #homeIcon3 .current, #homeIcon4 .current{
 	background-position-x: 0px;
+	background-position-y: 1px;
 }
-
-
 
 #menuContainer{
 	height:270px;
@@ -125,10 +124,12 @@ h3{
 #menu.fixed #homeHeader{
 	height:100px;
 	background:#330000 !important;
+	border-bottom:5px solid #ccc;
 }
 
+
 #menu.fixed #nav{
-	padding-top:8px;
+	padding-top:4px;
 }
 
 #menu.fixed span{
@@ -148,6 +149,11 @@ h3{
 	margin:0 auto;
 }
 
+#menuMobile{
+	height:200px;
+	background:#330000;
+}
+
 
 /* Modal stuff */
 
@@ -155,6 +161,26 @@ h3{
 	z-index:1001;
 }
 
+
+/* Slider for mobile */
+
+#sliderMobile{
+	background: url('../images/home/slider_texture_orange.png') #dc724f;
+}
+
+#sliderMobile h2{
+	padding-top: 30px;
+	font-size:72px;
+	color:#fff;
+	text-align: center;
+}
+
+#sliderMobile p{
+	color:#fff;
+	font-size:20px;
+	text-align: center;
+	padding-bottom:30px;
+}
 
 /* Slider elements */
 
@@ -258,18 +284,41 @@ h3{
 }
 
 
+/* Anchors */
+
+#whyAnchor{
+	position: absolute;
+	margin-top:-100px;
+}
+
+#formulaAnchor{
+	position: absolute;
+	margin-top:-50px;
+}
+
+#victimsAnchor{
+	position: absolute;
+	margin-top:-80px;
+}
+
+#huntAnchor{
+	position: absolute;
+	margin-top:-100px;
+}
+
+
 /* Home - Why */
 
 
 #why{
-	padding-top: 100px;	
+	padding-top: 30px;	
 }
 
 #why h2{
 	font-family: Ostrich;
 	font-size:72px;
 	text-align: center;
-	padding:20px 0px 20px 0px;
+	padding:20px 0px 10px 0px;
 }
 
 #why #sound{
@@ -283,12 +332,13 @@ h3{
 
 .loveGrapfruit{
 	text-align: center;
-	margin-left:-40px;
+	font-size:20px;
+	margin:0px;
 }
 
 .canadianTwist{
 	text-align: center;
-	margin-right:-80px;
+	font-size:20px;
 }
 
 #seriously h2{
@@ -296,7 +346,7 @@ h3{
 	font-size:61px;
 	text-align: center;
 	color:#db6e4c;
-	padding:20px 0px 100px 0px;
+	padding:20px 0px 50px 0px;
 }
 
 #pamplemooseSound{
@@ -304,27 +354,26 @@ h3{
 }
 
 
-/* Moostitution */
+/* formula */
 
-#moostitution{
-	min-height:940px;
-	background:url('../images/home/book.png') no-repeat center #fad3ba;
-	background-position-y: 140px;
-	padding-top:200px;
+#formula{
+	min-height:840px;
+	background:url('../images/home/book.png') no-repeat top center #fad3ba;
+	background-position-y: 70px;
+	padding-top:100px;
 }
 
-#moostitution #banner{
-	float:left;
-	margin-top:240px;
+#formula #banner{
+	margin-top:270px;
 }
 
-#moostitution #banner h2{
+#formula #banner h2{
 	font-size:72px;
 	margin-left:170px;
 	color:#ce0000;
 }
 
-#moostitution #background{
+#formula #background{
 	width:890px;
 	height:1034px;
 	margin:0 auto;
@@ -333,18 +382,18 @@ h3{
 	z-index:0;
 }
 
-#moostitution #contents{
+#formula #contents{
 	z-index:1000;
 	width:100%;
 	height:100%;
 	margin-top:25px;
 }
 
-#moostitution #contents ul{
-	padding:0px 0px 50px 535px;
+#formula #contents ul{
+	padding:0px 0px 50px 35px;
 }
 
-#moostitution #contents ul li{
+#formula #contents ul li{
 	list-style:none;
 	padding:25px 0px 27px;	
 	font-family: Ostrich !important;
@@ -360,12 +409,31 @@ h3{
 	margin-right:130px;
 }
 
+#formulaMobile{
+	background:url('../images/home/bookMobile.png') no-repeat top center #fad3ba;
+}
+
+#formulaMobile h2{
+	font-size:72px;
+	color:#ce0000;
+}
+
+#formulaMobile ul li{
+	list-style:none;
+	padding:25px 0px 27px;	
+	font-family: Ostrich !important;
+	font-size:42px;
+	line-height: 44px;
+
+}
+
+
 
 
 /* Victims */
 
 #victims{
-	padding-top: 100px;	
+	padding-top: 50px;	
 	padding-bottom:100px;
 }
 
@@ -412,24 +480,35 @@ h3{
 /* Hunt us down */
 
 #huntUsDown{
-	padding-top: 100px;
-	padding-bottom:100px;
+	padding-top: 50px;
 	background:#222;
 	color:#fff;
 }
 
 #huntUsDown h2{
-	color:#fff;
-	text-align: center;
+	color:#fff !important;
+	padding-bottom:20px;
+	text-align: left;
 	font-size: 72px;
+	text-align: center;
+}
+
+#huntUsDown h3{
+	color:#fff !important;
+	text-align: left;
+	font-size: 42px;
 	margin-top:40px;
+}
+
+#huntUsDown p{
+	margin-bottom:100px;
 }
 
 
 /* Footer */
 
 #footer{
-	margin-top:100px;
+	margin-top:70px;
 	margin-bottom: 0px;
 }
 
@@ -446,6 +525,7 @@ h3{
 
 #footer .right img{
 	padding-left:10px;
+	padding-bottom:20px;
 }
 
 #footer #copyright{
@@ -483,3 +563,8 @@ a#newsletter{
 #myModal{
 	z-index: 10000;
 }
+
+
+/* CSS */
+.orbit-wrapper .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; transition: opacity 400ms; }
+.orbit-wrapper:hover .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }

@@ -8,6 +8,7 @@
 			
 			<div id="menuMobile" class="show-for-small">
 			
+				<div id="mobileLogo"><img src="<?php bloginfo('template_url'); ?>/images/home/pamplemoose_logo_mobile.png"/></div>
 				
 				
 			</div>
@@ -94,7 +95,7 @@
 							<h2>We create exceptional brands</h2>
 							<p class="mainTitle">removing barriers in the way of brand creativity.</p>
 							
-							<a class="round button center" href="">Study our victims</a>
+							<a class="round button center" id="study" href="#victimsAnchor">Study our victims</a>
 						  
 							</div>
 						  
@@ -110,7 +111,7 @@
 						  
 							<h2>We give a hand to new blood</h2>
 							<p>providing early-stage marketing and branding for start-ups</p>
-						 	<a class="round button center" data-reveal-id="myModal">Build a masterpiece</a>
+						 	<a class="round button center" data-reveal-id="buildModal">Build a masterpiece</a>
 
 						  
 							</div>
@@ -127,7 +128,7 @@
 						  
 							<h2>We do facelifts for future stars</h2>
 							<p>brand revamps, website overhauls, and targeted messaging</p>
-							<a class="round button center" data-reveal-id="myModal">Snap out of it</a>
+							<a class="round button center" data-reveal-id="snapModal">Snap out of it</a>
 						  
 							</div>
 						  
@@ -252,7 +253,7 @@
 			
 				<div class="row">
 				
-					<div class="twelve columns">
+					<div class="six columns centered">
 					
 												
 							<h2>Formula</h2>
@@ -352,18 +353,51 @@
 			
 			<!-- Hunt us down modal -->
 			
-			<div id="myModal" class="reveal-modal [expand, xlarge, large, medium, small]">
-			  <h2>Awesome. I have it.</h2>
-			  <p class="lead">Your couch.  It is mine.</p>
-			  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+			<div id="buildModal" class="reveal-modal [expand, xlarge, large, medium, small]">
+			  <h2>Looking to get physical? </h2>
+			  <p class="lead">Send us a message.</p>
+			  We’ll discuss your requirements.</p>
+			  
+			  <input type="text"  placeholder="Name" ></input>
+  			  <input type="text"  placeholder="Email" ></input>
+			  <textarea placeholder="Message" ></textarea>			  
+			  <a class="button round orange">Submit</a>
+			  
 			  <a class="close-reveal-modal">&#215;</a>
 			</div>
+			
+			<div id="snapModal" class="reveal-modal [expand, xlarge, large, medium, small]">
+			  <h2>Let us give you a shake.</h2>
+			  <p class="lead">A new look, a new feel.</p>
+			  We’ll talk you through it.</p>
+			  
+			  <input type="text"  placeholder="Name" ></input>
+  			  <input type="text"  placeholder="Email" ></input>
+			  <textarea placeholder="Message" ></textarea>			  
+			  <a class="button round orange">Submit</a>
+			  
+			  <a class="close-reveal-modal">&#215;</a>
+			</div>
+			
+			<div id="spamModal" class="reveal-modal [expand, xlarge, large, medium, small]">
+			  <h2>Let us give you a shake.</h2>
+			  <p class="lead">A new look, a new feel.</p>
+			  We’ll talk you through it.</p>
+			  
+			  <input type="text"  placeholder="Name" ></input>
+  			  <input type="text"  placeholder="Email" ></input>
+			  <textarea placeholder="Message" ></textarea>			  
+			  <a class="button round orange">Submit</a>
+			  
+			  <a class="close-reveal-modal">&#215;</a>
+			</div>
+
 					
 			<script>
 			
 			$('#nav').onePageNav({
 		    currentClass: 'current',
-		    changeHash: true,
+		    changeHash: false,
 		    scrollSpeed: 1000,
 		    scrollOffset: 0,
 		    scrollThreshold: 0.5,
@@ -379,6 +413,18 @@
 		        //I get fired when you enter a section and I pass the list item of the section
 		    }
 		});
+		
+		</script>
+		
+		<script>
+		
+		jQuery(document).ready(function($) {
+ 
+	$("#study").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+	});
+});
 		
 		</script>
 

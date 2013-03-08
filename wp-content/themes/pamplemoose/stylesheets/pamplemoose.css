@@ -31,9 +31,10 @@ h3{
 
 #homeHeader{
 	width:100%;
-	background:#330000;
+	background:url('../images/home/header_bg.png') repeat-x bottom #330000;
 	color:#fff;
 	height:270px;
+	
 }
 
 #logo{
@@ -150,8 +151,16 @@ h3{
 }
 
 #menuMobile{
-	height:200px;
+	height:170px;
 	background:#330000;
+	border-bottom: 8px solid #ffffff;
+}
+
+#mobileLogo{
+	margin:0 auto;
+	display:block;
+	width:238px;
+	height:187px;
 }
 
 
@@ -386,7 +395,7 @@ h3{
 	z-index:1000;
 	width:100%;
 	height:100%;
-	margin-top:25px;
+	margin-top:60px;
 }
 
 #formula #contents ul{
@@ -410,20 +419,27 @@ h3{
 }
 
 #formulaMobile{
-	background:url('../images/home/bookMobile.png') no-repeat top center #fad3ba;
+	background:url('../images/home/paper_bg.png') no-repeat center center #fad3ba;
+	height:800px;
+	padding-top:30px;
+}
+
+#formulaMobile .row{
+	text-align: center;
 }
 
 #formulaMobile h2{
-	font-size:72px;
+	margin-top:80px;
+	font-size:62px;
 	color:#ce0000;
 }
 
 #formulaMobile ul li{
 	list-style:none;
-	padding:25px 0px 27px;	
+	padding:22px 0px 24px;	
 	font-family: Ostrich !important;
-	font-size:42px;
-	line-height: 44px;
+	font-size:38px;
+	line-height: 38px;
 
 }
 
@@ -508,8 +524,8 @@ h3{
 /* Footer */
 
 #footer{
-	margin-top:70px;
-	margin-bottom: 0px;
+	margin-top:50px;
+	margin-bottom: 40px;
 }
 
 #footer .left a{
@@ -558,10 +574,11 @@ a#newsletter{
      opacity: 1;
 }
 
-/* My Modal */
+/* Modals */
 
-#myModal{
-	z-index: 10000;
+#buildModal, #snapModal, #spamModal{
+	z-index: 100000;
+	border-radius: 20px;
 }
 
 

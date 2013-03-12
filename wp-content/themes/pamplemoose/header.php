@@ -43,7 +43,7 @@
 		<!-- end of wordpress head -->
 
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/pamplemoose.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/master.css" />
 
 		<!-- Scrolling JS plugin -->
 		

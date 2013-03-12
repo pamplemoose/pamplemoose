@@ -1,0 +1,89 @@
+/* Blog */
+
+#blog{
+	h1, h1 a{
+		font-family: Ostrich;
+		font-size:72px;
+		margin-top:150px;
+		color:#000;
+	}
+	#blogHeader{
+		height:250px;
+	}
+	#blogLogo{
+		background:url('../images/blog/pamplemoose_logo_blog.png') no-repeat;
+		width:404px;
+		height:317px;
+		display:block;
+		position:absolute;
+		right:0px;
+	}
+	.container{
+		background:#240000;
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+	.blogLine{
+		color:#fff;
+		font-size:42px;
+		margin-top:30px;
+	}
+	article.post{
+		border:none !important;
+	}
+	.blogEntry .row{
+		
+		.twelve.columns{
+			background:#fff;
+			margin-top:60px;
+			margin-bottom:40px;
+			border-left: 150px solid #de724a;
+			padding:30px 50px 50px 50px;
+		}
+		
+		h2{
+			a{
+				color:#240000;
+				text-transform: uppercase;
+				font-size:55px;
+				font-family: Ostrich;
+			}
+		}
+		
+		.date{
+			float:left;
+			margin-left:-150px;
+			text-align: center;
+			color:#ffffff;
+			margin-top:17px;
+			.day{
+				@include masterFont;
+				font-size:87px !important;
+				margin: -7px 0px 0px 0px;
+				padding:0px;
+			}
+			.month{
+				@include masterFont;
+				font-size:36px;
+				padding:0px;
+				
+			}
+			.year{
+				@include masterFont;
+				font-size:32px !important;
+				margin: -15px 0px 0px 0px;
+				padding:0px;
+			}
+		}
+		
+		img{
+			margin-bottom:30px;
+		}
+		
+		.button{
+			@include button;
+			background: $orange;
+			margin-top:40px;
+		}
+	}
+}

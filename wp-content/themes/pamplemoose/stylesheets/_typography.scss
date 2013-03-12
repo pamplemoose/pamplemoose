@@ -1,0 +1,25 @@
+/* Typography */
+
+@font-face {
+	font-family: Ostrich;
+	src: url('./fonts/ostrich-rounded-webfont.ttf'),
+    url('./fonts/ostrich-rounded-webfont.eot'); /* IE9 */
+}
+
+@mixin masterFont{
+	font-family:Ostrich;
+}
+
+*{
+	font-family: Arial;
+}
+
+h2{
+	font-family: Ostrich !important;
+
+}
+
+h3{
+	font-family: Ostrich !important;
+
+}

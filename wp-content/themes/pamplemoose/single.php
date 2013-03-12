@@ -1,60 +1,90 @@
+<?php
+/*
+Template Name: Blog
+*/
+
+$GLOBALS['blog'] = true;
+
+?>
+
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix">
+<div id="blog">			
 			
-				<div id="main" class="eight columns clearfix" role="main">
+	<div class="row" id="blogHeader">
+	
+		<div class="twelve columns">
+		
+			<a id="blogLogo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
+	
+			<?php include('common/social-media.php'); ?>	
+			
+			<h1><a href="<?php echo site_url(); ?>/blog">Blog</a></h1>
+			
+		</div>
+	
+	</div>
+	
+	<div class="container">
+	
+	
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+	
+		<div class="blogEntry">
+		
+			<div class="row">
+			
+				<div class="twelve columns">
+				
+					<div class="date">
+						<div class="month"><?php echo the_time('M'); ?></div>
+						<div class="day"><?php echo the_time('d'); ?></div>
+						<div class="year"><?php echo the_time('Y'); ?></div>
+					</div>
+				
+					<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+					
+					
+					
+					<a href="<?php the_permalink() ?>"><?php echo get_the_post_thumbnail($id, 'large'); ?></a>	
+					
+					<?php the_content(); ?>
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						
-						<header>
-						
-							<?php the_post_thumbnail( 'wpbs-featured' ); ?>
-							
-							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
-							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix" itemprop="articleBody">
-							<?php the_content(); ?>
-							
-					
-						</section> <!-- end article section -->
-						
-						<footer>
+				</div>
 			
-							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
-					
-					<?php endwhile; ?>			
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1>Not Found</h1>
-					    </header>
-					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
+			</div>
 			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
-    
-			</div> <!-- end #content -->
+		</div>
+		
+		<?php endwhile; ?>
+		
+			
+	</div>
+	
+	<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
+						
+	<?php page_navi(); // use the page navi function ?>
+						
+	<?php } ?>
+	
+	<?php else: ?>
+					
+	<article id="post-not-found">
+	    <header>
+	    	<h1>Not Found</h1>
+	    </header>
+	    <section class="post_content">
+	    	<p>Sorry, but the requested resource was not found on this site.</p>
+	    </section>
+	    <footer>
+	    </footer>
+	</article>
+	
+	<?php endif; ?>
+
+</div>
 
 <?php get_footer(); ?>

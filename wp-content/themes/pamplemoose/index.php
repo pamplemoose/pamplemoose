@@ -1,72 +1,96 @@
+<?php
+/*
+Template Name: Blog
+*/
+
+$GLOBALS['blog'] = true;
+
+?>
+
 <?php get_header(); ?>
 			
-			<div id="content">
+<div id="blog">			
 			
-				<div id="main" class="eight columns clearfix" role="main">
+	<div class="row" id="blogHeader">
+	
+		<div class="twelve columns">
+		
+			<a id="blogLogo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
+	
+			<?php include('common/social-media.php'); ?>	
+			
+			<h1>Blog</h1>
+			
+		</div>
+	
+	</div>
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<h3 class="blogLine">Something clever here about the blog</h3>
+		
+		</div>
+	
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+	
+		<div class="blogEntry">
+		
+			<div class="row">
+			
+				<div class="twelve columns">
+				
+					<div class="date">
+						<div class="month"><?php echo the_time('M'); ?></div>
+						<div class="day"><?php echo the_time('d'); ?></div>
+						<div class="year"><?php echo the_time('Y'); ?></div>
+					</div>
+				
+					<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+					
+					
+					
+					<a href="<?php the_permalink() ?>"><?php echo get_the_post_thumbnail($id, 'large'); ?></a>	
+					
+					<?php the_content('Read more &raquo;'); ?>
+					
+					<a href="<?php the_permalink() ?>" class="round button">Read more</a>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		<?php endwhile; ?>
+		
+			
+	</div>
+	
+	<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
+						
+	<?php page_navi(); // use the page navi function ?>
+						
+	<?php } ?>
+	
+	<?php else: ?>
+					
+	<article id="post-not-found">
+	    <header>
+	    	<h1>Not Found</h1>
+	    </header>
+	    <section class="post_content">
+	    	<p>Sorry, but the requested resource was not found on this site.</p>
+	    </section>
+	    <footer>
+	    </footer>
+	</article>
+	
+	<?php endif; ?>
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
-						<header>
-						
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpf-featured' ); ?></a>
-							
-							<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix">
-							<?php the_content('Read more &raquo;'); ?>
-					
-						</section> <!-- end article section -->
-						
-						<footer>
-			
-							<p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ' ', ''); ?></p>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
-					
-					<?php endwhile; ?>	
-					
-					<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
-						
-						<?php page_navi(); // use the page navi function ?>
-						
-					<?php } else { // if it is disabled, display regular wp prev & next links ?>
-						<nav class="wp-prev-next">
-							<ul class="clearfix">
-								<li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-								<li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
-							</ul>
-						</nav>
-					<?php } ?>		
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1>Not Found</h1>
-					    </header>
-					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
-			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
-    
-			</div> <!-- end #content -->
+</div>
 
 <?php get_footer(); ?>

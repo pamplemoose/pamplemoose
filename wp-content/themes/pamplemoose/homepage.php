@@ -1,14 +1,24 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Homepage
+*/
 
 
+get_header(); 
+
+?>
+
+		
 
 		<div class="container home">
+		
+		<a name="top"></a>
 					
-			<a id="logo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
+			<div id="logo" name="logo" class="hide-for-small"></div>
 			
 			<div id="menuMobile" class="show-for-small">
 			
-				<div id="mobileLogo"><img src="<?php bloginfo('template_url'); ?>/images/home/pamplemoose_logo_mobile.png"/></div>
+				<div id="mobileLogo"><a href="#logo"><img src="<?php bloginfo('template_url'); ?>/images/home/pamplemoose_logo_mobile.png"/></a></div>
 				
 				
 			</div>
@@ -20,48 +30,40 @@
 			<div id="homeHeader" class="hide-for-small">
 			
 				<div class="row">
-			
-				<a id="logoScroll" href="<?php echo site_url(); ?>"></a>
-			
-					<div class="twelve columns centered" id="nav">
-
-						<header role="banner" id="top-header">
 							
-								<div class="row">
-							
-									<div class="one column">
+						<div class="twelve columns centered" id="nav">
+						
+							<header role="banner" id="top-header">
+								
+									<div class="row">
 									
-										<div id="homeIcon1">
-											<li><a href="#whyAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home1.png" /><span>Why</span></a></li>
+										<div class="one column">
+											<div id="homeIcon1">
+												<li><a href="#whyAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home1.png" /><span>Why</span></a></li>
+											</div>
+										</div>
+										<div class="two columns">
+											<div id="homeIcon2">
+												<li><a href="#formulaAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home2.png" /><span>Formula</span></a></li>											</div>
 										</div>
 										
-									</div>
-																	
-									<div class="two columns">
-									
-										<div id="homeIcon2">
-											<li><a href="#formulaAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home2.png" /><span>Formula</span></a></li>
+										<div class="six columns">
+										<a href="#top" id="logoScroll"></a>
 										</div>
 										
-									</div>
-									
-									<div class="two columns offset-by-six">
-									
-										<div id="homeIcon3">
-											<li><a href="#victimsAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home3.png" /><span>Victims</span></a></li>
+										<div class="two columns">
+											<div id="homeIcon3">
+												<li><a href="#victimsAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home3.png" /><span>Victims</span></a></li>											</div>
 										</div>
-										
-									</div>
-									
-									<div class="one column">
-									
-										<div id="homeIcon4">
-											<li><a href="#huntAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home4.png" /><span>Hunt us down</span></a></li>
+										<div class="one column">
+											<div id="homeIcon4" >
+												<li><a href="#huntAnchor"><img src="<?php bloginfo('template_url'); ?>/images/home/icon_home4.png" /><span>Hunt us down</span></a></li>
+											</div>
 										</div>
-										
-									</div>
 									
-								</div>
+								
+																				
+									</div>
 
 							</div>
 							
@@ -143,7 +145,7 @@
 		  
 				<script type='text/javascript'>
 				   $(window).load(function() {
-				       $('#featuredContent').orbit({ fluid: '16x6', timer: false });
+				       $('#featuredContent').orbit({ fluid: '16x6', timer: true });
 				   });
 				</script>
 			</div>
@@ -379,18 +381,7 @@
 			  <a class="close-reveal-modal">&#215;</a>
 			</div>
 			
-			<div id="spamModal" class="reveal-modal [expand, xlarge, large, medium, small]">
-			  <h2>Let us give you a shake.</h2>
-			  <p class="lead">A new look, a new feel.</p>
-			  We’ll talk you through it.</p>
-			  
-			  <input type="text"  placeholder="Name" ></input>
-  			  <input type="text"  placeholder="Email" ></input>
-			  <textarea placeholder="Message" ></textarea>			  
-			  <a class="button round orange">Submit</a>
-			  
-			  <a class="close-reveal-modal">&#215;</a>
-			</div>
+			
 
 					
 			<script>
@@ -420,13 +411,13 @@
 		
 		jQuery(document).ready(function($) {
  
-	$("#study").click(function(event){		
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-	});
-});
+		$("#study").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+			});
+		});
 		
 		</script>
-
+	
 			
 <?php get_footer(); ?>

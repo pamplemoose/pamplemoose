@@ -1,0 +1,11 @@
+/* Buttons */
+
+@mixin button{
+	padding:15px 100px 15px 100px;
+	border:none;
+	box-shadow:none;
+	font-family: Ostrich;
+	font-size: 32px;
+	display:block;
+	max-width:400px;
+}

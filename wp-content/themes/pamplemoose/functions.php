@@ -8,6 +8,9 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
+add_theme_support( 'post-thumbnails' ); 
+
+
 // Get Bones Core Up & Running!
 require_once('library/bones.php');            // core functions (don't remove)
 require_once('library/plugins.php');          // plugins & extra functions (optional)

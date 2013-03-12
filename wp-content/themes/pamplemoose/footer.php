@@ -6,7 +6,12 @@
 	
 						<div class="six columns left">
 						
-							<a href="blog" class="fade">Blog</a><br/><br/>
+							<?php if($GLOBALS['blog'] == true){ ?>
+							<a href="<?php echo site_url(); ?>" class="fade">Homepage</a><br/><br/>
+							<?php } else { ?>
+							<a href="<?php echo site_url(); ?>/blog" class="fade">Blog</a><br/><br/>
+							<?php } ?>
+							
 							<a href="blog" class="fade">Contact</a>
 							
 							<p id="copyright" class="hide-for-small">Copyright Pamplemoose Creative 2013</p>
@@ -25,7 +30,20 @@
 					</div>
 					
 				</div>
-					
+				
+				<div id="spamModal" class="reveal-modal [expand, xlarge, large, medium, small]">
+				  <h2>Let us give you a shake.</h2>
+				  <p class="lead">A new look, a new feel.</p>
+				  We’ll talk you through it.</p>
+				  
+				  <input type="text"  placeholder="Name" ></input>
+	  			  <input type="text"  placeholder="Email" ></input>
+				  <textarea placeholder="Message" ></textarea>			  
+				  <a class="button round orange">Submit</a>
+				  
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+						
 			</footer> <!-- end footer -->
 		
 		</div> <!-- end #container -->

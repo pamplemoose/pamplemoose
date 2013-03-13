@@ -36,11 +36,8 @@
 				  <p class="lead">A new look, a new feel.</p>
 				  We’ll talk you through it.</p>
 				  
-				  <input type="text"  placeholder="Name" ></input>
-	  			  <input type="text"  placeholder="Email" ></input>
-				  <textarea placeholder="Message" ></textarea>			  
-				  <a class="button round orange">Submit</a>
-				  
+				  <?php mailchimpSF_signup_form(); ?>
+				  				  
 				  <a class="close-reveal-modal">&#215;</a>
 				</div>
 						

@@ -1,0 +1,43 @@
+/* Forms */
+
+
+
+#mc_signup_form{
+	border:none;
+	background:none;
+	padding:none !important;
+	margin-left:-5px !important;
+	
+	.mc_merge_var{
+		padding-bottom:20px;
+	}
+	
+	#mc-indicates-required{
+		display: none !important;
+	}
+	#mc_signup_submit{
+		@include button;
+	}
+	.mc_success_msg{
+		@include success;
+	}
+	.mc_error_msg{
+		@include failure;
+	}
+	.mc_required{
+		color:red;
+	}
+}
+
+
+div.wpcf7-validation-errors {
+	border:none !important;
+}
+
+.wpcf7-validation-errors{
+	@include failure;
+}
+
+span.wpcf7-not-valid-tip{
+	display:none !important;
+}

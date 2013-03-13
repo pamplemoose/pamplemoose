@@ -1,0 +1,11 @@
+/* Common elements */
+
+@mixin success{
+	display: block; padding: 6px 7px 7px; font-weight: bold; font-size: 14px; color: white; background-color: #2ba6cb; border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 12px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); position: relative;
+	background-color: #5da423; color: #fff; text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+@mixin failure{
+	display: block; padding: 6px 7px 7px; font-weight: bold; font-size: 14px; color: white; background-color: #2ba6cb; border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 12px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); position: relative;
+	background-color: #c60f13; color: #fff; text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}

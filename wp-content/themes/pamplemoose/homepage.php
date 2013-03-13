@@ -351,38 +351,8 @@ get_header();
 			
 			</div>
 			
-			
-			
-			<!-- Hunt us down modal -->
-			
-			<div id="buildModal" class="reveal-modal [expand, xlarge, large, medium, small]">
-			  <h2>Looking to get physical? </h2>
-			  <p class="lead">Send us a message.</p>
-			  We’ll discuss your requirements.</p>
-			  
-			  <input type="text"  placeholder="Name" ></input>
-  			  <input type="text"  placeholder="Email" ></input>
-			  <textarea placeholder="Message" ></textarea>			  
-			  <a class="button round orange">Submit</a>
-			  
-			  <a class="close-reveal-modal">&#215;</a>
-			</div>
-			
-			<div id="snapModal" class="reveal-modal [expand, xlarge, large, medium, small]">
-			  <h2>Let us give you a shake.</h2>
-			  <p class="lead">A new look, a new feel.</p>
-			  We’ll talk you through it.</p>
-			  
-			  <input type="text"  placeholder="Name" ></input>
-  			  <input type="text"  placeholder="Email" ></input>
-			  <textarea placeholder="Message" ></textarea>			  
-			  <a class="button round orange">Submit</a>
-			  
-			  <a class="close-reveal-modal">&#215;</a>
-			</div>
-			
-			
-
+			<?php include('common/modal-snap.php') ;?>
+			<?php include('common/modal-masterpiece.php') ;?>
 					
 			<script>
 			

@@ -46,6 +46,28 @@ h3 {
     text-align: center; }
 
 /* Buttons */
+.button.large.red {
+  padding: 15px 100px 15px 100px;
+  border: none;
+  box-shadow: none;
+  font-family: Ostrich;
+  font-size: 32px;
+  display: block;
+  max-width: 400px;
+  border: none;
+  background-color: #c33000; }
+
+.button.large.brown {
+  padding: 15px 100px 15px 100px;
+  border: none;
+  box-shadow: none;
+  font-family: Ostrich;
+  font-size: 32px;
+  display: block;
+  max-width: 400px;
+  border: none;
+  background-color: #240000; }
+
 /* Forms */
 #mc_signup_form {
   border: none;
@@ -141,6 +163,17 @@ span.wpcf7-not-valid-tip {
   padding: 0px !important;
   height: 0px !important;
   width: 0px !important; }
+
+.mc_signup_submit #mc_signup_submit {
+  padding: 15px 100px 15px 100px;
+  border: none;
+  box-shadow: none;
+  font-family: Ostrich;
+  font-size: 32px;
+  display: block;
+  max-width: 400px;
+  border: none;
+  background-color: #c33000; }
 
 /* Home */
 /* Home elements */
@@ -519,29 +552,51 @@ span.wpcf7-not-valid-tip {
   text-align: center; }
 
 #victimOne {
-  background: #ffffff;
+  background: url("../images/home/victims_hitch.png") no-repeat center center;
+  width: 500px;
   height: 400px;
   padding: 20px; }
 
 #victimTwo {
-  background: #ffffff;
+  background: url("../images/home/victims_nog.png") no-repeat center center;
+  width: 500px;
   height: 400px;
   padding: 20px; }
 
 #victimThree {
-  background: #ffffff;
+  background: url("../images/home/victims_qm.png") no-repeat;
+  width: 100%;
   height: 400px;
   padding: 20px; }
 
 .victimContainer {
-  background: #ccc;
+  border: 1px solid #efefef;
   width: 100%;
   height: 100%; }
+  .victimContainer p {
+    text-align: left !important;
+    line-height: 18px; }
+  .victimContainer h3 {
+    font-family: Ostrich;
+    font-size: 32px; }
+  .victimContainer h4 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .victimContainer a {
+    color: #c33000; }
+  .victimContainer a:hover {
+    color: #de724a; }
+
+#victimsMobile .item {
+  border-top: 1px solid #efefef; }
 
 #boxoverOne, #boxoverTwo, #boxoverThree {
   height: 100%;
   width: 100%;
-  background: #ebebeb; }
+  background: #ffffff;
+  padding: 20px; }
 
 /* Hunt us down */
 #huntUsDown {

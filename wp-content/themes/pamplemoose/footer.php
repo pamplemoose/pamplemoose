@@ -12,7 +12,7 @@
 							<a href="<?php echo site_url(); ?>/blog" class="fade">Blog</a><br/><br/>
 							<?php } ?>
 							
-							<a href="blog" class="fade">Contact</a>
+							<a href="blog" class="fade" data-reveal-id="contactModal">Contact</a>
 							
 							<p id="copyright" class="hide-for-small">Copyright Pamplemoose Creative 2013</p>
 	
@@ -31,6 +31,7 @@
 					
 				</div>
 				
+				<?php include('common/modal-contact.php'); ?>
 				<?php include('common/modal-spam.php'); ?>
 										
 			</footer> <!-- end footer -->

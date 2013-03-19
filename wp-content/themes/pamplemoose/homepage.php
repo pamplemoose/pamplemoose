@@ -94,10 +94,10 @@ get_header();
 					  
 							<div class="twelve columns centered">
 						  
-							<h2>We create exceptional brands</h2>
-							<p class="mainTitle">removing barriers in the way of brand creativity.</p>
+							<h2 class="fadeInDown">We create exceptional brands</h2>
+							<p class="mainTitle fadeInRight">removing barriers in the way of brand creativity.</p>
 							
-							<a class="round button center" id="study" href="#victimsAnchor">Study our victims</a>
+							<a class="round button center fadeInLeft" id="study" href="#victimsAnchor">Study our victims</a>
 						  
 							</div>
 						  
@@ -281,7 +281,7 @@ get_header();
 
 			<!-- Victims -->
 			
-			<div class="row" id="victims">
+			<div class="row hide-for-small" id="victims">
 			
 				<div class="twelve columns">
 				
@@ -291,20 +291,70 @@ get_header();
 				
 				<div class="six columns" id="victimOne">
 					<div class="victimContainer">
-					<div id="boxoverOne" style="display:none;">Hitch</div>
+					
+						<div id="boxoverOne" style="display:none;">
+							<h3>HitchWhister</h3>
+							
+							<h4>Nobody likes standing in the cold waiting for a ride.<br/>So, we changed this.</h4>
+	
+							<p>We took HitchWhistler from an exciting idea to a successful organization. Our work included the creation of the Hitch Whistler brand and website, stickers, posters and social media presence. Our biggest challenge was creating Hitch’s rideshare service; our biggest success was growing this service from 0 - 5,000+ members.</p>
+	
+							<p>We also developed iPhone and Android apps, hitching thumbs not included.</p>
+							
+							<a href="http://www.hitchwhistler.com">www.hitchwhistler.com</a>
+	
+						</div>
+						<img src="<?php bloginfo('template_url'); ?>/images/home/victims_hitch.png"/>
 					</div>
 				</div>
 
 				<div class="six columns" id="victimTwo">
 					<div class="victimContainer">
-					<div id="boxoverTwo" style="display:none;">NOG</div>
+					<div id="boxoverTwo" style="display:none;">
+						<h3>Canadian Neuro-ophthalmology Group</h3>
+						
+						<h4>We like to think that we used our heads to help others use theirs.</h4>
+
+						<p>At least this was the case with the Neuro-opthalmology Group’s brand revamp. Initial work included several creative workshops to determine medical branding requirements. These workshops led to logo designs and creative messaging. With a new look and voice, we then went to work on a crisp website (coming summer 2013) to reflect brand objectives.</p>
+
+							<p>From start to finish, we got to be creative scientists.</p>
+						
+						<em>Website coming soon</em>
+					</div>
 					</div>
 				</div>
 
 				<div class="twelve columns" id="victimThree">
 					<div class="victimContainer">
-					<div id="boxoverThree" style="display:none;">QM</div>
+					<div id="boxoverThree" style="display:none;">
+						<h3>QuickMobile</h3>
+						
+						<h4>We’re fast and we’re mobile.<br/>And while we aren’t QuickMobile, we like their style.</h4>
+
+						<p>Working for QuickMobile, we ensure maximum ROI and a 360 view of the marketing cycle for this aggressive startup. We provide ongoing support with digital collateral, marketing campaigns and branding efforts. We’ve even provided a complete corporate redesign, including a new logo and mobile-friendly website.</p>
+
+<p>This company is exploding—and we’re in the blast radius. 
+</p>
+						
+						<a href="http://www.quickmobile.com">www.quickmobile.com</em>
 					</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div class="row show-for-small" id="victimsMobile">
+			
+				<div class="twelve columns">
+
+					<h2>Victims</h2>
+					
+					<div class="item"><a href="http://www.hitchwhistler.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_hitch.png" alt="HitchWhistler" /></a></div>
+					
+					<div class="item"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_nog.png" alt="HitchWhistler" /></div>
+					
+					<div class="item"><a href="http://www.quickmobile.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_qm.png" alt="Quickmobile" /></a></div>
+					
 				</div>
 			
 			</div>

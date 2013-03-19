@@ -10,3 +10,13 @@
 	max-width:400px;
 	border:none;
 }
+
+.button.large.red{
+	@include button;
+	background-color: $orange;
+}
+
+.button.large.brown{
+	@include button;
+	background-color: $brown;
+}

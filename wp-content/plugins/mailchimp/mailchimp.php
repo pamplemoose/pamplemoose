@@ -1178,7 +1178,7 @@ function mailchimpSF_signup_submit() {
 		else if (is_array($opt_val) && $var['field_type'] == 'address') {
 			if ($var['req'] == 'Y') {
 				if (empty($opt_val['addr1']) || empty($opt_val['city'])) {
-					$errs[] = sprintf(__("You must fill in %s.", 'mailchimp_i18n'), esc_html($var['name']));
+					$errs[] = sprintf(__("Fail. Try again. Fill all those fields."), esc_html($var['name']));
 					$success = false;
 				}
 			}
@@ -1191,7 +1191,7 @@ function mailchimpSF_signup_submit() {
 	
 		if ($var['req'] == 'Y' && trim($opt_val) == '') {
 			$success = false;
-			$errs[] = sprintf(__("You must fill in %s.", 'mailchimp_i18n'), esc_html($var['name']));
+			$errs[] = sprintf(__("Fail. Try again. Fill all those fields."), esc_html($var['name']));
 		}
 		else {
 			if ($var['tag'] != 'EMAIL') {
@@ -1338,7 +1338,7 @@ function mailchimpSF_signup_submit() {
 		$msg .= '</span>';
 	}
 	else {
-		$msg = "<strong class='mc_success_msg'>".esc_html(__("Success, you've been signed up! Please look for our confirmation email!", 'mailchimp_i18n'))."</strong>";
+		$msg = "<strong class='mc_success_msg'>".esc_html(__("Get ready . . . to read. Look out for our confirmation email.", 'mailchimp_i18n'))."</strong>";
 	}
 	
 	// Set our global message

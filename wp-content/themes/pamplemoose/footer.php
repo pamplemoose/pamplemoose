@@ -31,16 +31,8 @@
 					
 				</div>
 				
-				<div id="spamModal" class="reveal-modal [expand, xlarge, large, medium, small]">
-				  <h2>Let us give you a shake.</h2>
-				  <p class="lead">A new look, a new feel.</p>
-				  We’ll talk you through it.</p>
-				  
-				  <?php mailchimpSF_signup_form(); ?>
-				  				  
-				  <a class="close-reveal-modal">&#215;</a>
-				</div>
-						
+				<?php include('common/modal-spam.php'); ?>
+										
 			</footer> <!-- end footer -->
 		
 		</div> <!-- end #container -->

@@ -36,8 +36,19 @@ div.wpcf7-validation-errors {
 
 .wpcf7-validation-errors{
 	@include failure;
+	width:100%;
+	margin:0px !important;
+}
+
+.wpcf7-not-valid{
+	margin:0px !important;
+	border:1px solid red !important;
 }
 
 span.wpcf7-not-valid-tip{
-	display:none !important;
+	display: none;
+	margin:0px !important;
+	padding:0px !important;
+	height:0px !important;
+	width:0px !important;
 }

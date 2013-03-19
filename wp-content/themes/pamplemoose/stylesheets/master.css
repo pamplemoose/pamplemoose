@@ -16,6 +16,35 @@ h3 {
   font-family: Ostrich !important; }
 
 /* Common elements */
+#featuredContent {
+  background: url("../images/home/loading.gif") center center white no-repeat;
+  height: 400px !important; }
+
+#featuredContent img {
+  display: none; }
+
+#featuredContent div {
+  display: none; }
+
+#featuredContent.orbit {
+  background: none; }
+
+#featuredContent.orbit img {
+  display: block; }
+
+#featuredContent.orbit div {
+  display: block; }
+
+#socialMedia {
+  height: 50px;
+  float: left;
+  margin-top: 30px;
+  margin-left: -5px; }
+  #socialMedia #facebook, #socialMedia #twitter, #socialMedia #google, #socialMedia #linkedin {
+    float: left;
+    width: 75px;
+    text-align: center; }
+
 /* Buttons */
 /* Forms */
 #mc_signup_form {
@@ -34,7 +63,8 @@ h3 {
     font-family: Ostrich;
     font-size: 32px;
     display: block;
-    max-width: 400px; }
+    max-width: 400px;
+    border: none; }
   #mc_signup_form .mc_success_msg {
     display: block;
     padding: 6px 7px 7px;
@@ -97,10 +127,20 @@ div.wpcf7-validation-errors {
   position: relative;
   background-color: #c60f13;
   color: #fff;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin: 0px !important; }
+
+.wpcf7-not-valid {
+  margin: 0px !important;
+  border: 1px solid red !important; }
 
 span.wpcf7-not-valid-tip {
-  display: none !important; }
+  display: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 0px !important;
+  width: 0px !important; }
 
 /* Home */
 /* Home elements */
@@ -652,5 +692,8 @@ a#newsletter {
   font-size: 32px;
   display: block;
   max-width: 400px;
+  border: none;
   background: #c33000;
   margin-top: 40px; }
+#blog .more-link {
+  display: none; }

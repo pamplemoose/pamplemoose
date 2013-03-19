@@ -9,3 +9,25 @@
 	display: block; padding: 6px 7px 7px; font-weight: bold; font-size: 14px; color: white; background-color: #2ba6cb; border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 12px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); position: relative;
 	background-color: #c60f13; color: #fff; text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
+
+#featuredContent { background:url('../images/home/loading.gif') center center #fff no-repeat; height: 400px !important; }
+#featuredContent img { display: none; }
+#featuredContent div { display: none; }
+
+#featuredContent.orbit { background: none; }
+#featuredContent.orbit img { display: block; }
+#featuredContent.orbit div { display: block; }
+
+#socialMedia{
+	height:50px;
+	float:left;
+	margin-top:30px;
+	margin-left:-5px;
+	
+	#facebook, #twitter, #google, #linkedin{
+		float:left;
+		width:75px;
+		text-align: center;
+		
+	}
+}

@@ -17,7 +17,7 @@ $GLOBALS['blog'] = true;
 		
 			<a id="blogLogo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
 	
-			<?php include('common/social-media.php'); ?>	
+			<?php include('common/social_media.php'); ?>	
 			
 			<h1>Blog</h1>
 			
@@ -29,7 +29,7 @@ $GLOBALS['blog'] = true;
 	
 		<div class="row">
 		
-			<h3 class="blogLine">Something clever here about the blog</h3>
+			<h3 class="blogLine">The Weekly Moose</h3>
 		
 		</div>
 	

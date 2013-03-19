@@ -17,7 +17,7 @@ $GLOBALS['blog'] = true;
 		
 			<a id="blogLogo" href="<?php echo site_url(); ?>" class="hide-for-small"></a>
 	
-			<?php include('common/social-media.php'); ?>	
+			<?php include('common/social_media.php'); ?>	
 			
 			<h1><a href="<?php echo site_url(); ?>/blog">Blog</a></h1>
 			

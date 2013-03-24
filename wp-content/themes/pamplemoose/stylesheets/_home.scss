@@ -411,12 +411,12 @@ z-index:10002;
 }
 
 #formula #contents ul{
-	padding:0px 0px 50px 35px;
+	padding:10px 0px 50px 35px;
 }
 
 #formula #contents ul li{
 	list-style:none;
-	padding:25px 0px 27px;	
+	padding:27px 0px 29px;	
 	font-family: Ostrich !important;
 	font-size:42px;
 	line-height: 44px;
@@ -524,10 +524,13 @@ z-index:10002;
 
 #victimsMobile{
 	.item{
-		border-top:1px solid #efefef;
+		border:1px solid #efefef;
+		margin:20px 0px 20px 0px;
 	}
 	img{
-
+		margin:0 auto;
+		text-align: center;
+		display: block;
 	}
 }
 
@@ -590,10 +593,11 @@ z-index:10002;
 #footer .right img{
 	padding-left:10px;
 	padding-bottom:20px;
+	float:right;
 }
 
 #footer #copyright{
-	margin-top:180px;
+	margin-top:80px;
 	color:#333;
 	margin-bottom:0px;
 }
@@ -605,9 +609,10 @@ a#newsletter{
 	box-shadow:none;
 	font-family: Ostrich;
 	font-size: 32px;
-	margin:150px auto 0px;
+	margin-top:5px;
 	display:block;
 	text-align: center;
+	float:right;
 }
 
 /* Global Transitions */

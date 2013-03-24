@@ -29,7 +29,11 @@ $GLOBALS['blog'] = true;
 	
 		<div class="row">
 		
-			<h3 class="blogLine">Fail. Learn. Win &mdash; Repeat</h3>
+			<div class="twelve columns">
+		
+				<h3 class="blogLine">Fail. Learn. Win &mdash; Repeat</h3>
+				
+			</div>
 		
 		</div>
 	

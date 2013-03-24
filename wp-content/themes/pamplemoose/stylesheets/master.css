@@ -503,11 +503,11 @@ span.wpcf7-not-valid-tip {
   margin-top: 60px; }
 
 #formula #contents ul {
-  padding: 0px 0px 50px 35px; }
+  padding: 10px 0px 50px 35px; }
 
 #formula #contents ul li {
   list-style: none;
-  padding: 25px 0px 27px;
+  padding: 27px 0px 29px;
   font-family: Ostrich !important;
   font-size: 42px;
   line-height: 44px; }
@@ -590,7 +590,12 @@ span.wpcf7-not-valid-tip {
     color: #de724a; }
 
 #victimsMobile .item {
-  border-top: 1px solid #efefef; }
+  border: 1px solid #efefef;
+  margin: 20px 0px 20px 0px; }
+#victimsMobile img {
+  margin: 0 auto;
+  text-align: center;
+  display: block; }
 
 #boxoverOne, #boxoverTwo, #boxoverThree {
   height: 100%;
@@ -635,10 +640,11 @@ span.wpcf7-not-valid-tip {
 
 #footer .right img {
   padding-left: 10px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  float: right; }
 
 #footer #copyright {
-  margin-top: 180px;
+  margin-top: 80px;
   color: #333;
   margin-bottom: 0px; }
 
@@ -649,9 +655,10 @@ a#newsletter {
   box-shadow: none;
   font-family: Ostrich;
   font-size: 32px;
-  margin: 150px auto 0px;
+  margin-top: 5px;
   display: block;
-  text-align: center; }
+  text-align: center;
+  float: right; }
 
 /* Global Transitions */
 .fade {
@@ -713,6 +720,13 @@ a#newsletter {
   margin-bottom: 40px;
   border-left: 150px solid #de724a;
   padding: 30px 50px 50px 50px; }
+@media only screen and (max-width: 767px) {
+  #blog .blogEntry .row .twelve.columns {
+    background: #fff;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border: none !important; } }
 #blog .blogEntry .row h2 a {
   color: #240000;
   text-transform: uppercase;

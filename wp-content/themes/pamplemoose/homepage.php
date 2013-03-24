@@ -80,7 +80,7 @@ get_header();
 			<div class="show-for-small row" id="sliderMobile">
 				<div class="twelve columns">
 					<h2>We create exceptional brands</h2>
-					<p class="mainTitle">removing barriers in the way of brand creativity.</p>
+					<p class="mainTitle">for the first-timers, for the existing players.</p>
 				</div>
 			</div>
 				
@@ -349,11 +349,11 @@ get_header();
 
 					<h2>Victims</h2>
 					
-					<div class="item"><a href="http://www.hitchwhistler.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_hitch.png" alt="HitchWhistler" /></a></div>
+					<div class="item"><a href="http://www.hitchwhistler.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_hitch_mobile.png" alt="HitchWhistler" /></a></div>
 					
-					<div class="item"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_nog.png" alt="HitchWhistler" /></div>
+					<div class="item"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_nog_mobile.png" alt="HitchWhistler" /></div>
 					
-					<div class="item"><a href="http://www.quickmobile.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_qm.png" alt="Quickmobile" /></a></div>
+					<div class="item"><a href="http://www.quickmobile.com"><img src="<?php bloginfo('template_url'); ?>/images/home/victims_qm_mobile.png" alt="Quickmobile" /></a></div>
 					
 				</div>
 			

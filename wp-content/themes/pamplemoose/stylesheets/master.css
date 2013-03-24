@@ -702,8 +702,9 @@ a#newsletter {
   padding-bottom: 40px; }
 #blog .blogLine {
   color: #fff;
-  font-size: 42px;
-  margin-top: 30px; }
+  font-size: 22px;
+  margin-top: 30px;
+  font-family: Arial !important; }
 #blog article.post {
   border: none !important; }
 #blog .blogEntry .row .twelve.columns {

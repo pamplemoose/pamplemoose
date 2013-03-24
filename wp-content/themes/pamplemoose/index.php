@@ -29,7 +29,7 @@ $GLOBALS['blog'] = true;
 	
 		<div class="row">
 		
-			<h3 class="blogLine">The Weekly Moose</h3>
+			<h3 class="blogLine">Fail. Learn. Win &mdash; Repeat</h3>
 		
 		</div>
 	
@@ -43,7 +43,7 @@ $GLOBALS['blog'] = true;
 			
 				<div class="twelve columns">
 				
-					<div class="date">
+					<div class="date hide-for-small">
 						<div class="month"><?php echo the_time('M'); ?></div>
 						<div class="day"><?php echo the_time('d'); ?></div>
 						<div class="year"><?php echo the_time('Y'); ?></div>

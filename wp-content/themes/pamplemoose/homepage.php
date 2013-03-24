@@ -95,7 +95,7 @@ get_header();
 							<div class="twelve columns centered">
 						  
 							<h2 class="fadeInDown">We create exceptional brands</h2>
-							<p class="mainTitle fadeInRight">removing barriers in the way of brand creativity.</p>
+							<p class="mainTitle fadeInRight">for the first-timers, for the existing players.</p>
 							
 							<a class="round button center fadeInLeft" id="study" href="#victimsAnchor">Study our victims</a>
 						  
@@ -129,7 +129,7 @@ get_header();
 							<div class="twelve columns centered">
 						  
 							<h2>We do facelifts for future stars</h2>
-							<p>brand revamps, website overhauls, and targeted messaging</p>
+							<p>brand mutations, website overhauls, and targeted messaging</p>
 							<a class="round button center" data-reveal-id="snapModal">Snap out of it</a>
 						  
 							</div>
@@ -145,7 +145,7 @@ get_header();
 		  
 				<script type='text/javascript'>
 				   $(window).load(function() {
-				       $('#featuredContent').orbit({ fluid: '16x6', timer: true });
+				       $('#featuredContent').orbit({ fluid: '16x6', timer: true, animationSpeed:450, advanceSpeed:8000, animation:'fade' });
 				   });
 				</script>
 			</div>
@@ -234,10 +234,10 @@ get_header();
 						<div id="contents">
 						
 							<ul>
-								<li>We choose projects <br/>we believe in.</li>
+								<li>We pick gigs we believe in.</li>
 								<li>We start today.</li>
 								<li>We don't take shortcuts.</li>
-								<li>We devise it with you.</li>
+								<li>We design it with you.</li>
 								<li>We deliver what's needed.</li>
 								
 							</ul>
@@ -297,9 +297,9 @@ get_header();
 							
 							<h4>Nobody likes standing in the cold waiting for a ride.<br/>So, we changed this.</h4>
 	
-							<p>We took HitchWhistler from an exciting idea to a successful organization. Our work included the creation of the Hitch Whistler brand and website, stickers, posters and social media presence. Our biggest challenge was creating Hitch’s rideshare service; our biggest success was growing this service from 0 - 5,000+ members.</p>
+							<p>We took HitchWhistler from an exciting idea to a successful organization. Our work included the creation of the HitchWhistler brand and website, stickers, posters and social media presence. Our biggest challenge was creating Hitch’s rideshare service; our biggest success was growing this service from 0 - 5,000+ members.</p>
 	
-							<p>We also developed iPhone and Android apps, hitching thumbs not included.</p>
+							<p>We also developed iPhone and Android apps.<br/>Slope-side service. Guaranteed.</p>
 							
 							<a href="http://www.hitchwhistler.com">www.hitchwhistler.com</a>
 	
@@ -313,9 +313,9 @@ get_header();
 					<div id="boxoverTwo" style="display:none;">
 						<h3>Canadian Neuro-ophthalmology Group</h3>
 						
-						<h4>We like to think that we used our heads to help others use theirs.</h4>
+						<h4>We use our heads to help others use theirs.</h4>
 
-						<p>At least this was the case with the Neuro-opthalmology Group’s brand revamp. Initial work included several creative workshops to determine medical branding requirements. These workshops led to logo designs and creative messaging. With a new look and voice, we then went to work on a crisp website (coming summer 2013) to reflect brand objectives.</p>
+						<p>This was the case with the Neuro-opthalmology Group’s brand revamp. Initial work included several creative workshops to determine research branding requirements. These workshops led to logo designs and creative messaging. With a new look and voice, we went to work on a crisp website (coming summer 2013) to reflect brand objectives.</p>
 
 							<p>From start to finish, we got to be creative scientists.</p>
 						
@@ -329,9 +329,9 @@ get_header();
 					<div id="boxoverThree" style="display:none;">
 						<h3>QuickMobile</h3>
 						
-						<h4>We’re fast and we’re mobile.<br/>And while we aren’t QuickMobile, we like their style.</h4>
+						<h4>We’re fast and we’re mobile. And while we aren’t QuickMobile, we like their style.</h4>
 
-						<p>Working for QuickMobile, we ensure maximum ROI and a 360 view of the marketing cycle for this aggressive startup. We provide ongoing support with digital collateral, marketing campaigns and branding efforts. We’ve even provided a complete corporate redesign, including a new logo and mobile-friendly website.</p>
+						<p>Working for this aggressive start-up, we ensure maximum ROI and a 360 view of the marketing cycle. We started with a corporate rebrand, including a new logo and mobile-friendly website. We now support them with digital collateral, creative marketing  and branding efforts.</p>
 
 <p>This company is exploding—and we’re in the blast radius. 
 </p>
@@ -379,7 +379,7 @@ get_header();
 								
 								<h3>Flo</h3>
 								
-								<p>Coming from somewhere in the French part of Europe, it's understandable that Flo believes in life's finer things - like grapefruit. A designer by day and bread maker by night, he's all about potential growth. His visions ignite our creative process, turning wild thoughts into freakishly great visuals. After a long day's work, he's the first one at the snow, and last one out the bar.</p>
+								<p>Coming from somewhere in the French part of Europe, it's understandable that Flo believes in life's finer things &mdash; like grapefruit. A designer by day and bread maker by night, he's all about potential growth. His visions ignite our creative process, turning wild thoughts into freakishly great visuals. After a long day's work, he's the first one at the bar, and last one off the snow.</p>
 													
 							</div>
 							

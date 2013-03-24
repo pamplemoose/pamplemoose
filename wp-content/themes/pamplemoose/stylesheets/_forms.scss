@@ -18,9 +18,8 @@
 	#mc_signup_submit{
 		@include button;
 	}
-	.mc_success_msg{
-		@include success;
-	}
+	
+	
 	.mc_error_msg{
 		@include failure;
 	}
@@ -28,6 +27,13 @@
 		color:red;
 	}
 }
+
+.mc_success_msg, .wpcf7-mail-sent-ok{
+		@include success;
+		width:100%;
+		border:none !important;
+		margin:0px !important;
+	}
 
 
 

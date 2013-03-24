@@ -87,25 +87,6 @@ h3 {
     display: block;
     max-width: 400px;
     border: none; }
-  #mc_signup_form .mc_success_msg {
-    display: block;
-    padding: 6px 7px 7px;
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
-    background-color: #2ba6cb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-    position: relative;
-    background-color: #5da423;
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
   #mc_signup_form .mc_error_msg {
     display: block;
     padding: 6px 7px 7px;
@@ -127,6 +108,29 @@ h3 {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
   #mc_signup_form .mc_required {
     color: red; }
+
+.mc_success_msg, .wpcf7-mail-sent-ok {
+  display: block;
+  padding: 6px 7px 7px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #2ba6cb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #5da423;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border: none !important;
+  margin: 0px !important; }
 
 div.wpcf7-validation-errors {
   border: none !important; }
